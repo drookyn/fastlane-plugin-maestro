@@ -34,7 +34,7 @@ module Fastlane
         time = Time.new(2007, 1, 9, 9, 41, 0)
         device.status_bar.clear
         device.status_bar.override(
-          time: time.iso8601,
+          time: time.iso8601(1),
           dataNetwork: '5g',
           wifiMode: 'active',
           cellularMode: 'active',
